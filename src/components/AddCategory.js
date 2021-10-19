@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 
-export const AddCategory = ({setcategories}) => {
+export const AddCategory = ({setCategories}) => {
  const [inputValue, setinputValue] = useState('')// se utiliza un string vacio para que no lance undefined
  const handleInputChange=(e) =>{
      //console.log(e.target.value)
@@ -11,7 +11,7 @@ export const AddCategory = ({setcategories}) => {
      e.preventDefault();
 
      if( inputValue.trim().length >2){
-     setcategories(cats=>[inputValue,...cats])
+        setCategories(cats=>[inputValue,...cats])
      setinputValue("")
      console.log("SUUUUUUUBMIT");
 
@@ -27,7 +27,7 @@ export const AddCategory = ({setcategories}) => {
 
 }
     AddCategory.propTypes ={
-        setcategories: PropTypes.func.isRequired,
+        setCategories: PropTypes.func.isRequired,
 
 
     }

@@ -1,11 +1,10 @@
-import React from 'react';
-import { useState } from 'react/cjs/react.development';
+import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
  const GifExpertApp = ()=>{
 
   //  const categories =['one Punch', 'Samurai X' , 'Bola de Dragon']
-const [categories, setcategories] = useState( ['Bola de Dragon']);
+  const [categories, setCategories] = useState(['One Punch']);
 
 // const handleAdd =(e)=>{
 
@@ -17,7 +16,7 @@ const [categories, setcategories] = useState( ['Bola de Dragon']);
     return(
         <>
         <h2>GifExpertApp</h2>
-        <AddCategory  setcategories = {setcategories}/>
+        <AddCategory  setCategories = {setCategories}/>
         <hr/>
         
       <ol>
